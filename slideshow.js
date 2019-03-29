@@ -1,8 +1,8 @@
-window.onclick = myFunction;
+//When clicked, button will produce html text
+function enterText() {
+  var text1 = 'Welcome '
+  var text2 = 'San Diego!'
+  var text3 = text1 + text2;
 
-// If the user clicks in the window, set the background color of <body> to yellow
-function myFunction() {
-  document.getElementsByTagName("BODY")[0].style.backgroundColor = "black";
-  document.getElementsByTagName("BODY")[0].style.color = "white";
-  document.getElementsByTagName("HEADER")[0].style.backgroundColor = "linear-gradient(#e66465, #9198e5, black)";
-}
+  document.getElementById('enterText').innerHTML = text3;
+};
